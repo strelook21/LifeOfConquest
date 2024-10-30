@@ -22,6 +22,7 @@ public class ScrMainMenu : MonoBehaviour
     public void StartVersus()
     {
         Debug.Log("Starting versus");
+        PlayerPrefs.SetInt("Randomise", 0);
         SceneManager.LoadScene("VersusPlay");
     }
 
